@@ -37,6 +37,7 @@ SUBSYSTEM_DEF(chat)
 		message = replacetext(message, "\t", "[FOURSPACES][FOURSPACES]")
 	message += "<br>"
 
+	message = convert1251_to_utf(message)
 
 	//url_encode it TWICE, this way any UTF-8 characters are able to be decoded by the Javascript.
 	//Do the double-encoding here to save nanoseconds

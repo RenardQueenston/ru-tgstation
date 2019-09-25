@@ -2942,4 +2942,5 @@
 #include "interface\menu.dm"
 #include "interface\stylesheet.dm"
 #include "interface\skin.dmf"
+#include "SS220\code\__HELPERS\l10n.dm"
 // END_INCLUDE

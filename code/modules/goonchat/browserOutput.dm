@@ -217,6 +217,8 @@ GLOBAL_DATUM_INIT(iconCache, /savefile, new("tmp/iconCache.sav")) //Cache of ico
 		message = replacetext(message, "\n", "<br>")
 		message = replacetext(message, "\t", "[FOURSPACES][FOURSPACES]") //EIGHT SPACES IN TOTAL!!
 
+	message = convert1251_to_utf(message)
+
 	if(islist(target))
 		// Do the double-encoding outside the loop to save nanoseconds
 		var/twiceEncoded = url_encode(url_encode(message))
